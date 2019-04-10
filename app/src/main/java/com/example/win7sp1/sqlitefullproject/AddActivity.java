@@ -29,6 +29,7 @@ public class AddActivity extends AppCompatActivity {
                 Contact contact=new Contact(name,phone);
                 db.addContact(contact);
                 Toast.makeText(AddActivity.this,"Data added",Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
     }
