@@ -36,6 +36,7 @@ public class UpdateActivity extends AppCompatActivity {
                 String phone= edit2.getText().toString();
                 Contact newContact=new Contact(id,name,phone);
                 db.updateContact(newContact);
+                finish();
             }
         });
 
